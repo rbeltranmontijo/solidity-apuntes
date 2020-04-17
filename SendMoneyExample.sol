@@ -9,7 +9,7 @@ contract SendMoneyExample {
         balanceReceived += msg.value;
     }
     
-    // Funcion para saber el balance del smart contract
+    // Funcion para saber el balance del smart contract y regresa la wallet
     function getBalance() public view returns(uint) {
         return address(this).balance;
     }
